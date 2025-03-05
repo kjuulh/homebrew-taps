@@ -5,7 +5,7 @@
 class Scaffold < Formula
   desc "Scaffold files in a solid testable and reliable manner"
   homepage "https://github.com/kjuulh/scaffold"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   depends_on "gh"
@@ -13,16 +13,16 @@ class Scaffold < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kjuulh/scaffold/releases/download/v0.1.2/scaffold-darwin-amd64"
-      sha256 "2e9c69e378433534df7c77a45406f858dad29afb0da6973b03865bbed2829b3f"
+      url "https://github.com/kjuulh/scaffold/releases/download/v0.1.3/scaffold-darwin-amd64"
+      sha256 "67ba18ddd5e6913aee4a1865c8eb263fb19ad35b24f9ebe4f2205b3527f9525e"
 
       def install
         bin.install "scaffold-darwin-amd64" => "scaffold"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kjuulh/scaffold/releases/download/v0.1.2/scaffold-darwin-arm64"
-      sha256 "524ca4298c26e7c61ac235d77470cab4b453459aa4923bcc2cf90544da5a65a8"
+      url "https://github.com/kjuulh/scaffold/releases/download/v0.1.3/scaffold-darwin-arm64"
+      sha256 "10096721be0958bfe79c1f2ab527f580efc091c1bcd2d7dc5af22f2b4fe94c63"
 
       def install
         bin.install "scaffold-darwin-arm64" => "scaffold"
@@ -33,8 +33,8 @@ class Scaffold < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kjuulh/scaffold/releases/download/v0.1.2/scaffold-linux-amd64"
-        sha256 "e7ed3ec6d7c161e74d3c9a87fbdbd15ea5ddf9dedc0a3ef8618c87f6e2378bda"
+        url "https://github.com/kjuulh/scaffold/releases/download/v0.1.3/scaffold-linux-amd64"
+        sha256 "e3744c3011144d1981c054cc7959f84d4b79e97cde9ebc915aea6db13740d07f"
 
         def install
           bin.install "scaffold-linux-amd64" => "scaffold"
@@ -43,8 +43,8 @@ class Scaffold < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kjuulh/scaffold/releases/download/v0.1.2/scaffold-linux-arm64"
-        sha256 "e85fb1d0dbf48359fc962e78cb6b5cedd8636cb8b20a74f7b32a8743785805e7"
+        url "https://github.com/kjuulh/scaffold/releases/download/v0.1.3/scaffold-linux-arm64"
+        sha256 "b3e6b4ed03d5ae7b8021b7d7e607b8c2c9b2fb738b4420b7a7170ea47e7fc963"
 
         def install
           bin.install "scaffold-linux-arm64" => "scaffold"
